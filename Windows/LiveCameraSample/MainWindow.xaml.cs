@@ -173,6 +173,10 @@ namespace LiveCameraSample
             var attrs = new List<FaceAPI.Models.FaceAttributeType> {
                 FaceAPI.Models.FaceAttributeType.Age,
                 FaceAPI.Models.FaceAttributeType.Gender,
+                FaceAPI.Models.FaceAttributeType.Glasses,
+                FaceAPI.Models.FaceAttributeType.Smile,
+                FaceAPI.Models.FaceAttributeType.FacialHair,
+                FaceAPI.Models.FaceAttributeType.Hair,
                 FaceAPI.Models.FaceAttributeType.HeadPose
             };
             var faces = await _faceClient.Face.DetectWithStreamAsync(jpg, returnFaceAttributes: attrs);

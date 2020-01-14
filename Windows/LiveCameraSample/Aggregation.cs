@@ -68,7 +68,17 @@ namespace LiveCameraSample
         {
             List<string> attrs = new List<string>();
             if (attr.Gender.HasValue) attrs.Add(attr.Gender.Value.ToString());
-            if (attr.Age > 0) attrs.Add(attr.Age.ToString());
+            if (attr.Age > 0) attrs.Add("Age: " + attr.Age.ToString());
+            if (attr.Glasses != null) attrs.Add(attr.Glasses.ToString());
+            attrs.Add("\n");
+            if (attr.FacialHair != null && attr.FacialHair.Beard >= 0.4) attrs.Add("Beard");
+            if (attr.FacialHair != null && attr.FacialHair.Moustache >= 0.4) attrs.Add("Moustache");
+            if (attr.FacialHair != null && attr.FacialHair.Sideburns >= 0.4) attrs.Add("Sideburns");
+            if (attr.FacialHair != null && attr.Hair.Bald > 0.50) attrs.Add("Bald");
+            else if (attr.FacialHair != null) attrs.Add("Not Bald");
+            attrs.Add("\n");
+            if (attr.Smile > 0.50) attrs.Add("Smiling");
+            else if (attr.FacialHair != null) attrs.Add("Not smiling");
             if (attr.HeadPose != null)
             {
                 // Simple rule to estimate whether person is facing camera. 
