@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiveCameraSample", "LiveCameraSample\LiveCameraSample.csproj", "{5B40977E-E8FA-41BC-8F0A-6D6FDE237571}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiveCamera", "LiveCameraSample\LiveCamera.csproj", "{5B40977E-E8FA-41BC-8F0A-6D6FDE237571}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoFrameAnalyzer", "VideoFrameAnalyzer\VideoFrameAnalyzer.csproj", "{BEC7DA78-C953-4A72-924F-2749D1F9F18B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicConsoleSample", "BasicConsoleSample\BasicConsoleSample.csproj", "{0638DEF8-9613-4599-9335-7A2438B447DA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicConsole", "BasicConsoleSample\BasicConsole.csproj", "{0638DEF8-9613-4599-9335-7A2438B447DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,5 +30,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7B5D11AE-7D21-4C96-BDFA-C06C88A04E57}
 	EndGlobalSection
 EndGlobal
