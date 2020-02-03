@@ -25,8 +25,8 @@ namespace BiometricSystemsAWS.Tests
         public async Task IntegrationTest()
         {
             const string fileName = "sample-pic.jpg";
-            IAmazonS3 s3Client = new AmazonS3Client(RegionEndpoint.USWest2);
-            IAmazonRekognition rekognitionClient = new AmazonRekognitionClient(RegionEndpoint.USWest2);
+            IAmazonS3 s3Client = new AmazonS3Client(RegionEndpoint.EUWest3);
+            IAmazonRekognition rekognitionClient = new AmazonRekognitionClient(RegionEndpoint.EUWest3);
 
             var bucketName = "biometricsystems-".ToLower() + DateTime.Now.Ticks;
             await s3Client.PutBucketAsync(bucketName);
