@@ -66,6 +66,7 @@ namespace BiometricSystemsAWS.Tests
                     Key = fileName
                 });
 
+                // True if a face is detected, -1 otherwise
                 Assert.True(getTagsResponse.Tagging.Count >= 0);
             }
             finally
